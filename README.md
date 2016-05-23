@@ -1,10 +1,10 @@
 # DriftParadise
 
-Simple Drift team website coded in HTML/CSS/JS/JQ.
+Simple Drift team website coded in HTML/CSS/JS/.
 
 One-page styled with parrallax effects.
 
-On click of each team member a drawer pulls out of the right side with the memeber's car + information.
+On click of each team member a drawer pulls out of the right side with the member's car + information.
 
 Hover effects applied on images.
 
