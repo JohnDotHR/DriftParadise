@@ -1,0 +1,241 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Drift</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="css/full-slider.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+<!-- Navbar -->
+<div id="nav">
+	 <a href="#home">Home</a>
+     <a href="#about">3P4B</a>
+     <a href="#portfolio">Info</a>
+     <a href="#contact">Testimonials</a>
+          <script>
+     $(document).ready(function() {
+var stickyNavTop = $('#nav').offset().top;
+ 
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop();
+      
+if (scrollTop > stickyNavTop) { 
+    $('#nav').addClass('sticky');
+} else {
+    $('#nav').removeClass('sticky'); 
+}
+};
+ 
+stickyNav();
+ 
+$(window).scroll(function() {
+    stickyNav();
+});
+});
+     </script>
+     <script>
+     $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 100) {
+    $('#nav').fadeIn();
+  } else {
+    $('#nav').fadeOut();
+  }
+});
+     </script>
+</div>
+<!-- Navbar /-->
+
+<!-- Page content -->
+<div id="page0">
+	<a id="home" class="smooth"></a>
+	<div class="header-container" data-parallax="scroll">
+		<img src="img/driftparadise.png">
+							<!-- <div class="letsgo">
+								<!--<a href="#about" class="btn btn-sample hvr-pulse " role="button" style="font-size: 3.5em; border-radius: 50px; text-align: center;"><span class="glyphicon glyphicon-arrow-down"></span></a>
+								</div> -->
+
+	</div>
+</div>
+
+<div id="sponsors">
+  <a id="about" class="smooth"></a>
+	<div class="sponsors">
+		<div class="row row-centered">
+			<div class="col-xs-12 col-md-4 col-centered" style="margin-top: 40px; ">
+				<img src="img/bridgestone.png" class="hvr-pulse" style="width: 400px; margin-top: 20px;";>
+			</div>
+						<div class="col-xs-12 col-md-4 col-centered" style="margin-top: 40px;">
+				<img src="img/sparco1.png" class="hvr-pulse" style="width: 400px; margin-top: 20px;">
+			</div>
+						<div class="col-xs-12 col-md-4 col-centered" style="margin-top: 10px;">
+				<img src="img/redbull.png" class="hvr-pulse" style=" width: 300px; margin-bottom: 20px;">
+			</div>
+		</div>
+	</div>
+</div>
+      
+
+<div id="page3">
+  <a id="contact" class="smooth"></a>
+
+		<section id="cd-team" class="cd-section">
+			<div class="cd-container">
+				<h2>TEAM</h2>
+				<ul>
+					<li>
+						<a href="#0" data-type="member-1">
+							<figure>
+								<img src="img/driver1.jpg" alt="Team member 1" style="height: 500px;">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Dennis Häggblom <span>Drifter</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					
+					<li>
+						<a href="#0" data-type="member-2">
+							<figure>
+								<img src="img/driver2.jpg" alt="Team member 1" style="height: 500px;">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								James Deane <span>Drifter</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+
+					<li>
+						<a href="#0" data-type="member-3">
+							<figure>
+								<img src="img/driver3.jpg" alt="Team member 1" style="height: 500px;">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Janis Eglite <span>Drifter</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+				</ul>
+			</div> <!-- cd-container -->
+		</section> <!-- cd-team -->
+
+		<div class="cd-overlay"></div>
+	</main>
+
+	<div class="cd-member-bio member-1">
+		<div class="cd-member-bio-pict">
+			<img src="img/car1.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Dennis Häggblom</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-2">
+		<div class="cd-member-bio-pict">
+			<img src="img/car2.png" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet James Deane</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-3">
+		<div class="cd-member-bio-pict">
+			<img src="img/car3.png" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Janis Eglite</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+</div>
+
+
+<div class="container" data-parallax="scroll" data-image-src="img/twin.jpg" style="width: 100%;">
+		  <div class="row row-centered"> 
+		 <div class="col-md-4 col-centered" style="margin-top: 40px;">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		<div class="col-md-4 col-centered" style="margin-top: 40px;">
+
+		</div>
+		<div class="col-md-4 col-centered" style="margin-top: 40px;">
+
+		</div>
+		</div>
+		</div>
+
+<div id="videogal">
+	
+</div>
+
+<div id="page4">
+  <a id="call" class="smooth"></a>
+<br><br>
+<div class="map-frame" style="-webkit-filter: grayscale(100%);
+filter: grayscale(100%);"><iframe style="pointer-events:none" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+		  </div>
+</div>
+
+
+<div id="page5">
+	<a id="idk" class="smooth"></a>
+ 
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 2000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

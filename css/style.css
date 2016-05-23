@@ -1,0 +1,342 @@
+body {
+	background-color: black;
+	}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+/**Arrow scroll**/
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:99em;
+  bottom: 0;
+  right: 0;
+  margin-left:-5em;
+  background:rgba(0,0,0,0.5);
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.arrow-wrap:hover .hint {
+  opacity:0.5;
+}
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 0.2s;
+  }
+
+#nav {
+	background-color:#3cbc8d;
+	display:none;
+	}
+
+#nav a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+	text-transform: uppercase;
+	float: left;
+    position: relative;
+    padding: 10px;
+    left: 38%;
+	/** Pulse effect 1 **/
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    display:none;
+
+}
+/** Pulse effect 2 **/
+#startpagenav a:hover, a:focus, a:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  }
+
+
+#page0 {
+height: 1000px;
+background-image: url("../img/bg.jpg");
+background-size: cover;
+background-position: bottom;
+background-attachment: fixed;
+-webkit-transition: background-image 1s;
+-moz-transition: background-image 1s;
+-ms-transition: background-image 1s;
+-o-transition: background-image 1s;
+transition: background-image 1s;
+overflow: hidden;
+}
+
+#sponsors {
+    width: 100%;
+    min-height: 200px;
+    background-color:  black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+	}
+	
+
+
+#page2 {
+	min-height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	color: #fff;
+}
+
+#page3 {
+	min-height: 700px;
+	background-color: black;
+}
+
+
+#page4 {
+	min-height: 200px;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+#page5 {
+	height: 100px;
+	background-color: black;
+}
+
+.row {
+
+}
+
+.container h1 {
+font-family: 'Lato', sans-serif;
+}
+
+
+#wrapper {
+width:100%;
+margin : 0;
+opacity: 0;
+}
+ 
+#first-div {
+width:50%;
+margin : 0;
+float : left ;
+}
+
+#first-div img {
+height: 700px;
+margin-top: 50px;
+}
+
+#second-div h1 {
+margin-top: 60px;
+} 
+ 
+#second-div p {
+margin-top: 20px;
+} 
+ 
+#second-div {
+width:50%;
+margin : 0;
+float : left ;
+}
+
+#second-div img {
+margin-top: 70px;
+position: relative;
+right: 5%;
+width: 100%;
+}
+
+.fadeInBlock {
+    opacity:0;
+}
+
+.pull-left {
+margin-right: 20px;
+}
+
+.header-container {
+	z-index: 1;
+	margin-top: 19%;
+	margin-left: 17%;
+}
+
+
+.header-container h1 {
+	color: #3cbc8d;
+	z-index: 1;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10%;
+	border: 3px solid #fffff;
+	padding: 10px;
+	border-radius: 15px;
+	width: 700px;
+	letter-spacing: 3px;
+	font-size: 100px;
+	font-family: 'Montserrat', sans-serif;
+	}
+	
+.header-container h2 {
+	color: #3cbc8d;
+	z-index: 1;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #fffff;
+	padding: 10px;
+	border-radius: 15px;
+	width: 700px;
+	letter-spacing: 3px;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+		}
+	
+.btn-sample {
+	text-align: center;
+	height: 80px;
+	width: 180px;
+	}
+	
+.letsgo {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 400px;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.parallax-window {
+    height: 400px;
+    background: transparent;
+}
+
+#ContactFormDiv {
+	text-align: center;
+	margin-right: 100px;
+	margin-left: auto;
+	margin-top: 10%;
+}
+
+
+.cd-member-bio {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 270px;
+	height: 100%;
+	overflow-y: auto;
+	/* smooth scrolling on mobile phones and tablets */
+	-webkit-overflow-scrolling: touch;
+	/* this how we move the author bio section off the canvas */
+	transform: translateX(270px);
+	transition-property: transform;
+	transition-duration: 0.3s;
+}
+
+.map-frame {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.map-content {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 390px;
+    background-color: black;
+    color: #FFF;
+}
+
+
