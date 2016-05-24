@@ -10,7 +10,7 @@ Hover effects applied on images.
 
 Embeded grayscale Google map to fit the design.
 
-To do: minor fixes and RWD.
+To do: minor fixes.
 
 ![screenshot](http://i.imgur.com/q2YAc0H.jpg)
 
